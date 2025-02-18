@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Run Dept</title>
+    <style>
+        body {
+            background-color: #dadee1;
+            background-image: linear-gradient(to top, rgb(29, 28, 28),white);
+        }
+        h1,
+        h2 {
+            text-align: center;
+            line-height: 1;
+            box-shadow: 5px 10px 8px #708090;
+        }
+        div {
+            color: #000000;
+
+        }
+        p {
+            font-weight: 400;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .center-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+                border-radius: 100px;
+                margin: 0 auto;
+                display: block;
+                background-color: #000000;
+                border: 1px solid #000;
+                color: #fff;
+                font-size: 16px;
+                line-height: 22px;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: all 200ms ease;
+            }
+        button:hover {
+                color: #000000;
+                background: #ffffff;
+
+            }  
+    </style>
+    </head>
+    <body>
+<h1>RUN DEPT</h1>
+<h2>HOUSTON</h2>
+</div>
+<div class="running-details">
+    <p>
+        <strong>Every Thursday</strong>
+        <br>Join a running group that has all levels of running. 
+        <br>Beginners, Intermediate, and Advanced are all welcome to join!
+        <br><b>Memorial Park</b>
+        <br>Meet at <b><em>6:30PM</em></b> for warm ups and strecthing and take off at <b><em>7:00PM</em></b>
+    </p>
+<hr>
+    <p>
+    <strong>Benefits:</strong>
+    <br>Joining a run club allows you to network, make new friends and maintain a healthy lifestyle!
+    </p>
+<hr>
+
+<button>
+    Come Run With Us
+</button>
+
+<p>Live Life Better With <a href="https://www.instagram.com/rundept_hrc/?hl=am-et"><span style="color:rgb(255, 255, 255)">The Run Dept</span></a> Houston.</p>
+    <img class="center-image" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/147/072/original/memorialtrail.jpeg?1728600249" width="200" height="200">
+</div>
+
+<script>
+
+function welcomeCity() {
+        let exercise = prompt ("Do you like you run or walk?");
+        if (exercise.toLowerCase() === "yes" || exercise.toLowerCase() === "run" || exercise.toLowerCase() === "walk"){
+            alert("We would love for you to join!");
+       
+        let city = prompt ("What city do you live in?");
+
+        if (city.toLowerCase() === "houston") {
+                alert ("Yay! You live in Houston you can join!");
+        } else {
+                alert ("Sorry, you cannot join you do not live in Houston.");
+        }
+            } else {
+                alert ("We understand! Maybe another time!");
+        }
+    }
+        let comeRunWithUs = document.querySelector("button");
+
+        comeRunWithUs.addEventListener("click", welcomeCity);
+
+        </script>
+    </body>
+</html>
